@@ -5,21 +5,6 @@
 ## About this repository
 This repository contains an implementation of the models introduced in the paper [Scene Graph Generation by Iterative Message Passing](https://arxiv.org/abs/1701.02426) by Xu et al. The model taks an image and a graph proposal as input and predicts the object and relationship categories in the graph. The network  is implemented using [TensorFlow](https://www.tensorflow.org/) and the rest of the framework is in Python. Because the model is built directly on top of [Faster-RCNN by Ren et al](https://arxiv.org/abs/1506.01497), a substantial amount of data processing code is adapted from the [py-faster-rcnn repository](https://github.com/rbgirshick/py-faster-rcnn). 
 
-
-## Citing this work
-If you find this work useful in your research, please consider citing:
-```
-@inproceedings{xu2017scenegraph,
-  title={Scene Graph Generation by Iterative Message Passing},
-  author={Xu, Danfei and Zhu, Yuke and Choy, Christopher and Fei-Fei, Li},
-  booktitle={Computer Vision and Pattern Recognition (CVPR)},
-  year={2017}
- }
-```
-
-
-
-
 ## Prerequisites
 1. The framework does not include a regional proposal network implementation. A RoI proposal database pre-extracted using the py-faster-rcnn framework is available for download.
 2. You need CUDA-compatible GPUs to run the framework. A CPU-compatible version will be released soon.
